@@ -1,0 +1,17 @@
+
+
+<suite name = "Parallel Test" parallel = "classes" thread-count ="2">
+	<test name = "Demo">
+		<classes>
+			
+			<class name ="com.noorteck.testnglecture.GroupingTest"></class>
+			<class name ="com.noorteck.testnglecture.FruitTest"></class>
+			
+			
+		</classes>
+		
+		
+	</test>
+	
+	
+</suite>

@@ -1,0 +1,21 @@
+<suite name="Sprint 16">
+	<test name="Login Functionality">
+
+		<parameter name="browser" value="Chrome">
+		</parameter>
+		<parameter name="url" value="www.google.com">
+		</parameter>
+		<parameter name="username" value="admin">
+		</parameter>
+		<parameter name="password" value="psw123">
+		</parameter>
+		<parameter name="code" value="XYZabc"></parameter>
+		
+
+		<classes>
+			<class name="com.noorteck.testnglecture.ParameterTest">
+
+			</class>
+		</classes>
+	</test>
+</suite>

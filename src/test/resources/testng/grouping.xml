@@ -1,0 +1,20 @@
+<suite name="SmokeTest">
+	<test name="UI Functionality">
+
+		<groups>
+			<run>
+				<include name="Car">
+				</include>
+				<include name="Europe">
+				</include>
+
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.noorteck.testnglecture.GroupingTest">
+
+			</class>
+		</classes>
+	</test>
+</suite>
