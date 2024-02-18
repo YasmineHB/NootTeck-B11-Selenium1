@@ -3,12 +3,13 @@ package homework;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import utils.Hooks;
 
 public class Exercise1 extends Hooks {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws Exception {
 
 		// 1. Launch chrome browser
 		setUp();
@@ -41,6 +42,12 @@ public class Exercise1 extends Hooks {
 			System.out.println("Header name = " + head);
 		} else {
 			System.out.println("Header name is not Dashboard");
+		}
+
+		Assert.assertTrue(head.contains("Dashboard"));
+
+		if (head.contains("Dashboard")) {
+			throw new Exception("Message not valid");
 		}
 
 		// 7. Close the browser
