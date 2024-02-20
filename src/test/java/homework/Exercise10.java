@@ -206,8 +206,8 @@ public class Exercise10 {
 				String title5 = driver.getTitle();
 				System.out.println(title5);
 				if (title5.equals("Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos")) {
-					List<WebElement> header = driver.findElements(By.id("Header"));
 
+					List<WebElement> header = driver.findElements(By.cssSelector("ul._yb_1rhuy"));
 					for (WebElement list : header) {
 						String text = list.getText();
 						System.out.println(text);
